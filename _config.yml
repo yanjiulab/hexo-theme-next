@@ -40,10 +40,10 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
+  small: /images/favicon.png
+  medium: /images/favicon.png
+  apple_touch_icon: /images/favicon.png
+  safari_pinned_tab: /images/favicon.png
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
@@ -53,15 +53,15 @@ rss:
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  #since: 2015
+  since: 2017
 
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/v4.7.0/icons/
     # `heart` is recommended with animation in red (#ff0000).
-    name: user
+    name: heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
     color: "#808080"
 
@@ -157,10 +157,32 @@ baidu_push: false
 # External url should start with http:// or https://
 menu:
   home: / || home
-  #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
-  archives: /archives/ || archive
+  notes: 
+    default: /notes/ || book
+    Algorithm: 
+      default: /algorithm/ || rocket
+      LeetCode: /leetcode/ || code
+    Programming: 
+      default: /programming/ || star
+      Java: /java/ || coffee
+      OOP & Design Patterns: /design-patterns/ || object-group
+    Networking:
+      default: /networking/ || cloud
+      SDN: /sdn/ || cloud
+    Operating System:
+      default: /os/ || linux
+      Linux: /linux/ || linux
+    Database: /database/ || database
+    Cloud Computing: /cloud/ || mixcloud
+    Tools:
+      default: /tools/ || scissors
+      Git: /git/ || code-fork
+      IDEA: /idea/ || lightbulb-o
+      VS Code: /vscode/ || lightbulb-o
+  about: /about/ || user
+  # tags: /tags/ || tags
+  # categories: /categories/ || th
+  # archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -176,10 +198,10 @@ menu_settings:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-#scheme: Gemini
+# scheme: Muse
+# scheme: Mist
+# scheme: Pisces
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -196,8 +218,8 @@ site_state: true
 # Value before `||` delimiter is the target permalink.
 # Value after `||` delimiter is the name of Font Awesome icon. If icon (with or without delimiter) is not specified, globe icon will be loaded.
 social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+  GitHub: https://github.com/yanjiulab || github
+  E-Mail: mailto:liyanjiu@outlook.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -221,14 +243,14 @@ links_settings:
   layout: block
 
 links:
-  #Title: http://example.com
+  当然我在扯淡: http://www.yinwang.org/
 
 # Sidebar Avatar
 avatar:
   # In theme directory (source/images): /images/avatar.gif
   # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: #/images/avatar.gif
+  url: /uploads/avatar.png
   # If true, the avatar would be dispalyed in circle.
   rounded: false
   # If true, the avatar would be rotated with the cursor.
@@ -249,7 +271,7 @@ toc:
 sidebar:
   # Sidebar Position.
   position: left
-  #position: right
+  # position: right
 
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
@@ -318,25 +340,25 @@ symbols_count_time:
   wpm: 275
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Wechat Subscriber
 wechat_subscriber:
   enable: false
-  qcode: #/uploads/wechat-qcode.jpg
+  qcode: #/uploads/wechat-qcode.png
   #description: Subscribe to my blog by scanning my public wechat account.
 
 # Reward (Donate)
 reward_settings:
   # If true, reward would be displayed in every article by default.
   # You can show or hide reward in a specific article throuth `reward: true | false` in Front-matter.
-  enable: false
+  enable: true
   animation: false
   #comment: Donate comment here.
 
 reward:
-  #wechatpay: /images/wechatpay.png
-  #alipay: /images/alipay.png
+  wechatpay: /uploads/wechatpay.png
+  alipay: /uploads/alipay.jpeg
   #bitcoin: /images/bitcoin.png
 
 # Related popular posts
@@ -480,7 +502,7 @@ github_banner:
 font:
   # Use custom fonts families or not.
   # Depended options: `external` and `family`.
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
   host:
@@ -493,14 +515,14 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Lato
+    family: Microsoft YaHei
     size:
 
-  # Font settings for site title (.site-title).
+  # Font settings for site title (.site-title). Emilys Candy
   title:
     external: true
-    family:
-    size:
+    family: Cinzel Decorative
+    size: 1.8
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
@@ -511,7 +533,7 @@ font:
   # Font settings for posts (.post-body).
   posts:
     external: true
-    family:
+    family: Times New Roman
 
   # Font settings for <code> and code blocks.
   codes:
@@ -530,7 +552,7 @@ font:
 
 # Math Formulas Render Support
 math:
-  enable: false
+  enable: true
 
   # Default (true) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in Front-matter.
@@ -545,7 +567,7 @@ math:
 
   # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.
   katex:
-    enable: false
+    enable: true
     # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
     copy_tex: false
 
@@ -605,7 +627,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: changyan | disqus | disqusjs | facebook_comments_plugin | gitalk | livere | valine | vkontakte
-  active:
+  active: livere
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Modify texts or order for any navs, here are some examples.
@@ -668,7 +690,7 @@ valine:
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: # <your_uid>
+livere_uid: MTAyMC80MTAzMS8xNzU1Ng==
 
 # Gitalk
 # Demo: https://gitalk.github.io
@@ -779,7 +801,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
-  enable: false
+  enable: true
   total_visitors: true
   total_visitors_icon: user
   total_views: true
@@ -813,7 +835,7 @@ algolia_search:
 # Local Search
 # Dependencies: https://github.com/wzpan/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   # If auto, trigger search by changing input.
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto
@@ -862,8 +884,8 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: simple
-  icons: false
+  style: modern
+  icons: true
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
@@ -941,8 +963,8 @@ three:
 # For more information: https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   enable: false
-  onmobile: true # Display on mobile or not
-  color: "0,0,255" # RGB values, use `,` to separate
+  onmobile: false # Display on mobile or not
+  color: "0,0,0" # RGB values, use `,` to separate
   opacity: 0.5 # The opacity of line: 0~1
   zIndex: -1 # z-index property of the background
   count: 99 # The number of lines
