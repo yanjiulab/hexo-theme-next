@@ -98,10 +98,10 @@ creative_commons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+# scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 # Dark Mode
 darkmode: false
@@ -117,30 +117,30 @@ darkmode: false
 # When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
 # External url should start with http:// or https://
 menu:
-  home: / || home
+  home: / || fa fa-fa fa-home
   notes: 
-    default: /notes/ || book
+    default: /notes/ || fa fa-book
     Algorithm: 
-      default: /algorithm/ || rocket
-      LeetCode: /leetcode/ || code
+      default: /algorithm/ || fa fa-rocket
+      LeetCode: /leetcode/ || fa fa-code
     Programming: 
-      default: /programming/ || star
-      Java: /java/ || coffee
-      OOP & Design Patterns: /design-patterns/ || object-group
+      default: /programming/ || fa fa-star
+      Java: /java/ || fa fa-coffee
+      OOP & Design Patterns: /design-patterns/ || fa fa-object-group
     Networking:
-      default: /networking/ || cloud
-      SDN: /sdn/ || cloud
+      default: /networking/ || fa fa-cloud
+      SDN: /sdn/ || fa fa-cloud
     Operating System:
-      default: /os/ || linux
-      Linux: /linux/ || linux
-    Database: /database/ || database
-    Cloud Computing: /cloud/ || mixcloud
+      default: /os/ || fab fa-linux
+      Linux: /linux/ || fab fa-linux
+    Database: /database/ || fa fa-database
+    Cloud Computing: /cloud/ || fab fa-mixcloud
     Tools:
-      default: /tools/ || scissors
-      Git: /git/ || code-fork
-      IDEA: /idea/ || lightbulb-o
-      VS Code: /vscode/ || lightbulb-o
-  about: /about/ || user
+      default: /tools/ || fa fa-tools
+      Git: /git/ || fa fa-code-branch
+      IDEA: /idea/ || fa fa-cube
+      VS Code: /vscode/ || fa fa-edit
+  about: /about/ || fa fa-user
   # tags: /tags/ || tags
   # categories: /categories/ || th
   # archives: /archives/ || archive
@@ -186,7 +186,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /uploads/avatar.png
   # If true, the avatar will be dispalyed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -198,7 +198,8 @@ site_state: true
 # Social Links
 # Usage: `Key: permalink || icon`
 # Key is the link label showing to end users.
-# Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
+# Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome 
+
 social:
   GitHub: https://github.com/yanjiulab || github
   E-Mail: mailto:liyanjiu@outlook.com || envelope
@@ -226,17 +227,6 @@ links_settings:
 
 links:
   当然我在扯淡: http://www.yinwang.org/
-
-# Sidebar Avatar
-avatar:
-  # In theme directory (source/images): /images/avatar.gif
-  # In site directory (source/uploads): /uploads/avatar.gif
-  # You can also use other linking images.
-  url: /uploads/avatar.png
-  # If true, the avatar would be dispalyed in circle.
-  rounded: false
-  # If true, the avatar would be rotated with the cursor.
-  rotated: false
 
 # Table Of Contents in the Sidebar
 toc:
@@ -825,9 +815,8 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: modern
+  style: flat
   icons: true
-  border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
