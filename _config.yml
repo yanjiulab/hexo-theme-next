@@ -125,21 +125,23 @@ menu:
       LeetCode: /leetcode/ || fa fa-code
     Programming: 
       default: /programming/ || fa fa-star
+      C: /c/ || fab fa-cuttlefish
       Java: /java/ || fa fa-coffee
+      Python: /python/ || fab fa-python
       OOP & Design Patterns: /design-patterns/ || fa fa-object-group
-    Networking:
-      default: /networking/ || fa fa-cloud
-      SDN: /sdn/ || fa fa-cloud
+    Networking: /networking/ || fa fa-cloud
     Operating System:
       default: /os/ || fab fa-linux
+      Commands: /commands/ || fas fa-terminal
       Linux: /linux/ || fab fa-linux
     Database: /database/ || fa fa-database
     Cloud Computing: /cloud/ || fab fa-mixcloud
     Tools:
       default: /tools/ || fa fa-tools
       Git: /git/ || fa fa-code-branch
-      IDEA: /idea/ || fa fa-cube
+      Vim: /vim/ || fa fa-edit
       VS Code: /vscode/ || fa fa-edit
+      IDEA: /idea/ || fa fa-cube
   about: /about/ || fa fa-user
   # tags: /tags/ || tags
   # categories: /categories/ || th
@@ -201,8 +203,8 @@ site_state: true
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome 
 
 social:
-  GitHub: https://github.com/yanjiulab || github
-  E-Mail: mailto:liyanjiu@outlook.com || envelope
+  GitHub: https://github.com/yanjiulab || fab fa-github
+  E-Mail: mailto:liyanjiu@outlook.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -221,12 +223,18 @@ social_icons:
 # Blog rolls
 links_settings:
   icon: fa fa-link
-  title: Links
+  title: Worth Reading
   # Available values: block | inline
-  layout: block
+  layout: inline
 
 links:
+  OSTEP: http://pages.cs.wisc.edu/~remzi/OSTEP 
+  OSTEP-Chinese: http://pages.cs.wisc.edu/~remzi/OSTEP/Chinese/
+  APUE: http://www.apuebook.com/about3e.html
+  UNP: https://mathcs.clarku.edu/~jbreecher/cs280/UNIX%20Network%20Programming(Volume1,3rd).pdf
+  IUNP: https://cse.buffalo.edu/~hungngo/classes/TMA-Training/UNP/
   当然我在扯淡: http://www.yinwang.org/
+  
 
 # Table Of Contents in the Sidebar
 toc:
@@ -815,7 +823,7 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: flat
+  style: modern
   icons: true
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
